@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-//import items from "./data";
-import Room from "./components/Room";
 import Client from "./components/Contentful";
 
 const RoomContext = React.createContext();
 
-// <Roomcontext.provider value ={}
 class RoomProvider extends Component {
   state = {
     loading: true,
@@ -52,20 +49,6 @@ class RoomProvider extends Component {
   };
   componentDidMount() {
     this.getData();
-    /* let rooms = this.formaData(items);
-    let featuredRooms = rooms.filter(room => room.featured === true);
-    let maxPrice = Math.max(...rooms.map(item => item.price));
-    let maxSize = Math.max(...rooms.map(item => item.size));
-    this.setState({
-      rooms,
-      featuredRooms,
-      sortedRooms: rooms,
-      loading: false,
-      price: maxPrice,
-      maxPrice,
-      size: maxSize,
-      maxSize
-    }); */
   }
 
   getRoom = slug => {

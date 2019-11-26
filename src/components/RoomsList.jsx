@@ -1,6 +1,5 @@
 import React from "react";
 import Room from "./Room";
-import { isTemplateElement } from "@babel/types";
 
 export default function RoomsList({ rooms }) {
   if (rooms.length === 0) {
