@@ -1,8 +1,8 @@
 import { createClient } from "contentful";
+import dotenv from "dotenv";
+console.log(process.env);
 
 export default createClient({
-  space: process.env.SPACE,
-  accessToken: process.env.ACCESS_TOKEN
+  space: process.env.REACT_APP_SPACE,
+  accessToken: process.env.REACT_APP_ACCESS_TOKEN
 });
-
-//accessToken: "CFPAT-AStZ47OEWAtr3lu_Uk48QAZSGBgJ8qTGmxQAnd6ECCo"
