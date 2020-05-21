@@ -1,6 +1,4 @@
-# React-Django-Collab
-
-> A resort booking website with React/context/Contentful
+# Resort booking website with React/context/Contentful
 
 > Click <a href="https://quirky-mclean-4493ba.netlify.com/" target="_blank">`HERE`</a> to check it out right now.
 
